@@ -5,6 +5,7 @@ Consider in your tabbed application you faced the situation when you performed a
 
 1: Add UIApplication Extension
 
+<pre>
 extension UIApplication {
 /*function will return reference to tabbarcontroller */
 
@@ -19,9 +20,12 @@ func tabbarController() -> UIViewController? {
    return nil
   }
 }
+<pre>
 
 2: How to use
 
+<pre>
 guard let tabbarController = UIApplication.shared.tabbarController() as? RootTabBarViewController else { return }
 
 tabbarController.selectedIndex = 0  // Will redirect to first tab ( index = 0 )
+<pre>
