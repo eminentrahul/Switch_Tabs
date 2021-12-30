@@ -14,13 +14,13 @@ func tabbarController() -> UIViewController? {
   
   for vc in vcs {
     if  let _ = vc as? TabBarViewController {
-    return vc
+      return vc
     }
    }
    return nil
   }
 }
-<pre>
+</pre>
 
 2: How to use
 
@@ -28,4 +28,4 @@ func tabbarController() -> UIViewController? {
 guard let tabbarController = UIApplication.shared.tabbarController() as? RootTabBarViewController else { return }
 
 tabbarController.selectedIndex = 0  // Will redirect to first tab ( index = 0 )
-<pre>
+</pre>
